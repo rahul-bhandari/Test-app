@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<widget xmlns= "http://www.w3.org/ns/widgets" 
+xmlns:gap= "http://phonegap.com/ns/1.0" 
+id= "com.org.xplore" 
+version = "0.0.1"> 
 <!--
        Licensed to the Apache Software Foundation (ASF) under one
        or more contributor license agreements.  See the NOTICE file
@@ -52,7 +56,9 @@
     <plugin name="Globalization" value="org.apache.cordova.Globalization"/>
     <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser"/>
     <plugin name="org.apache.cordova.facebook.Connect" value="org.apache.cordova.facebook.ConnectPlugin" />
-	<plugin name="FacebookConnect" name="404289292981360" value="123456" />
+	 <gap:plugin name="FacebookConnect">
+   		<param name="APP_ID" value="404289292981360" />
+ 	</gap:plugin>
 </plugins>
 </cordova>
-
+</widget>
